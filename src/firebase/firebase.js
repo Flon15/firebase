@@ -1,16 +1,18 @@
-﻿import { initializeApp } from "firebase/app";
-import { getAuth } from "firebase/auth";
+﻿
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDK0VcJODVnCaE3Cp-xhUAFNwBtERR4_Lc",
-  authDomain: "detyra-29601.firebaseapp.com",
-  projectId: "detyra-29601",
-  storageBucket: "detyra-29601.firebasestorage.app",
-  messagingSenderId: "465420601192",
-  appId: "1:465420601192:web:7c028465422085874b38dd",
-  measurementId: "G-45W32QFLHN"
+  apiKey: "AIzaSyD8jjfSGW0vIM1BpeaRyL3VrO1MDC0Omqo",
+  authDomain: "authenticator-df06e.firebaseapp.com",
+  projectId: "authenticator-df06e",
+  storageBucket: "authenticator-df06e.firebasestorage.app",
+  messagingSenderId: "128645052579",
+  appId: "1:128645052579:web:0d2f3c7b5c8905b5ea2716",
+  measurementId: "G-L86RL87RPZ"
 };
 
+// Initialize Firebase
 const app = initializeApp(firebaseConfig);
-export const auth = getAuth(app);
+const analytics = getAnalytics(app);
 export default app;
